@@ -1,0 +1,59 @@
+Number,Question,Answer
+0,What is the subject in the sentence: I had an amazing experience on the northern shore of Kauai today.,The answer is I.
+1,What is the object in the sentence: I had an amazing experience on the northern shore of Kauai today.,The answer is an amazing experience on the northern shore of Kauai today.
+2,What is the tense of the word had in the sentence: I had an amazing experience on the northern shore of Kauai today.,The answer is past.
+3,What is the action in the sentence: I had an amazing experience on the northern shore of Kauai today.,The answer is had.
+4,What is the subject in the sentence:  They are called honu in Hawaii and are a symbol of knowledge and long life.,The answer is They.
+5,What is the object in the sentence:  They are called honu in Hawaii and are a symbol of knowledge and long life.,The answer is honu.
+6,What is the tense of the word are in the sentence:  They are called honu in Hawaii and are a symbol of knowledge and long life.,The answer is present.
+7,What is the action in the sentence:  They are called honu in Hawaii and are a symbol of knowledge and long life.,The answer is are called.
+8,What is the tense of the word are called in the sentence:  They are called honu in Hawaii and are a symbol of knowledge and long life.,The answer is past.
+9,What is the subject in the sentence:  A special guide took us to the protective reefs where the turtles spend time.,The answer is the turtles.
+10,What is the object in the sentence:  A special guide took us to the protective reefs where the turtles spend time.,The answer is us.
+11,What is the tense of the word took in the sentence:  A special guide took us to the protective reefs where the turtles spend time.,The answer is past.
+12,What is the action in the sentence:  A special guide took us to the protective reefs where the turtles spend time.,The answer is spend.
+13,What is the tense of the word spend in the sentence:  A special guide took us to the protective reefs where the turtles spend time.,The answer is present.
+14,"What is the subject in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is the snorkeling equipment.
+15,"What is the object in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is us to be underwater.
+16,"What is the tense of the word learned in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is past.
+17,"What is the action in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is allowed.
+18,"What is the tense of the word to use in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is future.
+19,"What is the tense of the word allowed in the sentence:  Under her guidance, we learned how to use the snorkeling equipment that allowed us to be underwater and breathe air from above through a tube.",The answer is past.
+20,What is the subject in the sentence:  But snorkeling wasn't all she knew about!,The answer is snorkeling.
+21,What is the object in the sentence:  But snorkeling wasn't all she knew about!,The answer is all she knew about.
+22,What is the tense of the word was in the sentence:  But snorkeling wasn't all she knew about!,The answer is past.
+23,What is the action in the sentence:  But snorkeling wasn't all she knew about!,The answer is was.
+24,"What is the subject in the sentence:  She was a marine biologist, so she knew all about the creatures of the ocean.",The answer is she.
+25,"What is the object in the sentence:  She was a marine biologist, so she knew all about the creatures of the ocean.",The answer is all about the creatures of the ocean.
+26,"What is the tense of the word was in the sentence:  She was a marine biologist, so she knew all about the creatures of the ocean.",The answer is past.
+27,"What is the action in the sentence:  She was a marine biologist, so she knew all about the creatures of the ocean.",The answer is knew.
+28,"What is the tense of the word knew in the sentence:  She was a marine biologist, so she knew all about the creatures of the ocean.",The answer is past.
+29,What is the subject in the sentence:  She led us safely through our adventure and told us many interesting things about what we saw.,The answer is She.
+30,What is the object in the sentence:  She led us safely through our adventure and told us many interesting things about what we saw.,The answer is us.
+31,What is the tense of the word led in the sentence:  She led us safely through our adventure and told us many interesting things about what we saw.,The answer is past.
+32,What is the action in the sentence:  She led us safely through our adventure and told us many interesting things about what we saw.,The answer is led.
+33,"What is the subject in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is my heart.
+34,"What is the object in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is pounding.
+35,"What is the tense of the word saw in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is past.
+36,"What is the action in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is was pounding.
+37,"What is the tense of the word was in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is past.
+38,"What is the tense of the word was pounding in the sentence:  When I saw the first turtle, my heart was pounding.",The answer is past.
+39,What is the subject in the sentence:  I was so excited!,The answer is I.
+40,What is the object in the sentence:  I was so excited!,The answer is so excited.
+41,What is the tense of the word was in the sentence:  I was so excited!,The answer is past.
+42,What is the action in the sentence:  I was so excited!,The answer is was.
+43,"What is the subject in the sentence:  We were not allowed to touch them, but it was enough just to be near these gentle and graceful creatures.",The answer is it.
+44,"What is the object in the sentence:  We were not allowed to touch them, but it was enough just to be near these gentle and graceful creatures.",The answer is near these gentle and graceful creatures.
+45,"What is the tense of the word were not allowed to touch in the sentence:  We were not allowed to touch them, but it was enough just to be near these gentle and graceful creatures.",The answer is past.
+46,"What is the action in the sentence:  We were not allowed to touch them, but it was enough just to be near these gentle and graceful creatures.",The answer is to be.
+47,"What is the tense of the word to be in the sentence:  We were not allowed to touch them, but it was enough just to be near these gentle and graceful creatures.",The answer is past.
+48,"What is the subject in the sentence:  We swam among thousands of colorful fish, and we saw octopuses and eels.",The answer is we.
+49,"What is the tense of the word swam in the sentence:  We swam among thousands of colorful fish, and we saw octopuses and eels.",The answer is present.
+50,"What is the action in the sentence:  We swam among thousands of colorful fish, and we saw octopuses and eels.",The answer is saw.
+51,"What is the object in the sentence:  We swam among thousands of colorful fish, and we saw octopuses and eels.",The answer is octopuses and eels.
+52,"What is the tense of the word saw in the sentence:  We swam among thousands of colorful fish, and we saw octopuses and eels.",The answer is past.
+53,What is the tone of the piece?,The tone was happy.
+54,Fill in the blank: northern shore located at ____,northern shore located at Kauai
+55,Fill in the blank: ____ located at Kauai,northern shore located at Kauai
+56,Fill in the blank: She told ____,She told us
+57,Fill in the blank: ____ told us,She told us
