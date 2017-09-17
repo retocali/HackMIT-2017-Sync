@@ -124,12 +124,12 @@ if __name__ == "__main__":
     # Location Questions
 
 
-
+    count = 0
     for question in questions.keys():  
-        # pass
-        print("Q: " + question, "<br>", '<div id="spoiler" style="display:none">',"A: " + questions[question][0],'''
-        </div><button title="Click to show/hide content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/hide</button>
-        ''',"<br>")
+        print("Q: " + question, "<br>", '<div id="spoiler' + str(count) + '" style="display:none">',"A: " + questions[question][0],'''
+        </div><button title="Click to show/hide content" type="button" onclick="if(document.getElementById('spoiler%d') .style.display=='none') {document.getElementById('spoiler%d') .style.display=''}else{document.getElementById('spoiler%d') .style.display='none'}">Show/hide</button>
+        ''' % (count, count, count),"<br>")
+        count += 1
 
     count = 0
     # data = [['Number', 'Question', 'Answer', 'Types']]

@@ -9,12 +9,13 @@ Meteor.startup(() => {
   // Server methods
   Meteor.methods({
     runCode: function (text) {
+      console.log(text);
       // This method call won't return immediately, it will wait for the
       // asynchronous code to finish, so we call unblock to allow this client
       // to queue other method calls (see Meteor docs)
       this.unblock();
       var future=new Future();
-      var command="touch ~/p; pwd > ~/p; python3 /home/rodrigo/sync/sync/quaestio_v1.py -f /home/rodrigo/sync/sync/reading_text.txt";
+      var command="python3 /home/rodrigo/sync/sync/quaestio_v1.py -t \"" + text + "\"";
       exec(command, function(error,stdout,stderr) {
         if(error){
           console.log(error);
