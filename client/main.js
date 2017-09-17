@@ -2,8 +2,8 @@ import { Meteor } from 'meteor/meteor';
 
 // import model here??
 
-import 'ui/home.js'
-import 'ui/home.html'
+import './ui/home.js'
+import './ui/home.html'
 
 // soooo do we need data?
 
