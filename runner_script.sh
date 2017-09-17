@@ -1,0 +1,1 @@
+python3 ../quaestio_v1.py -f ../reading_text.txt
