@@ -34,7 +34,7 @@ if __name__ == "__main__":
             answer = "The answer is " + role[item]["text"] + "."
             questions[question] = answer
 
-    #
+    #   
 
     for question in questions.keys():  
         print("Q: " + question, "\nA: " + questions[question])
