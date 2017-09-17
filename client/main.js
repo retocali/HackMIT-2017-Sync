@@ -1,22 +1,21 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import { Meteor } from 'meteor/meteor';
 
-import './main.html';
+// import model here??
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
+import './ui/home.js'
+import './ui/home.html'
+
+// soooo do we need data?
+
+// routing
+Router.route('/', {
+  name: 'home',
+  template: 'home',
+  // data: stuff ???
 });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+Router.configure({
+  layoutTemplate: 'main',
+  loadingTemplate: 'loading',
+  notFoundTemplate: 'not-found',
 });
