@@ -2,12 +2,19 @@ import { Template } from 'meteor/templating';
 
 Template.home.helpers({
   i_wanna_questions: () => {
-      return getQuestions( )
+      return getQuestions("this is my story.")
   }
 });
 
-getQuestions = () => {
-    Meteor.call('runCode', "this is my story.", function (err, response) {
+
+Template.home.events({
+    'click #generateButton': (e) => {
+        getQuestions( $("#inputText").value )
+    }
+});
+getQuestions = (text) => {
+    Meteor.call('runCode', text, function (err, response) {
         console.log(response);
+        $('#results').html(response)
     });
 }

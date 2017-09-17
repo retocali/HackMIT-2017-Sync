@@ -18,7 +18,7 @@ if __name__ == "__main__":
     elif (sys.argv[1] == "-t"): # Takes text
         text = sys.argv[2]
     
-    print(text)
+    #print(text)
 
 
     features = "keywords,semantic_roles,emotion,relations,entities"
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         return action, actor, direct_object
     
     relations = r.json()["relations"]
-    print(relations)
+    #print(relations)
 
     min_confidence = 0.51
 
@@ -98,8 +98,8 @@ if __name__ == "__main__":
                 
                 n_action, n_actor, n_direct_object = relation_parser(next_relation)
                 
-                print("Pair:",relation, next_relation)
-                print(direct_object, n_direct_object)
+                #print("Pair:",relation, next_relation)
+                #print(direct_object, n_direct_object)
                 # print("S:",set([action, n_action]))
                 if (direct_object == n_direct_object and len(set([action, n_action])) == 2):
                     answer = actor + " " + direct_object + " " + n_actor
@@ -126,10 +126,14 @@ if __name__ == "__main__":
 
 
     for question in questions.keys():  
-        print("Q: " + question, "\nA: " + questions[question][0])
+        # pass
+        print("Q: " + question, "<br>", '<div id="spoiler" style="display:none">',"A: " + questions[question][0],'''
+        </div><button title="Click to show/hide content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/hide</button>
+        ''',"<br>")
 
     count = 0
-    data = [['Number', 'Question', 'Answer', 'Types']]
+    # data = [['Number', 'Question', 'Answer', 'Types']]
+    data = []
     for question, answer in questions.items():
         data.append([count, question, answer[0], answer[1]])
         count += 1
@@ -138,3 +142,4 @@ if __name__ == "__main__":
         a = csv.writer(fp, delimiter=',')
         a.writerows(data)
 
+    #print('{ data:' + str(data) + "}")
