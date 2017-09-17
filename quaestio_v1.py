@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     # parse first command as type of input
     
-    if (sys.argv[1] == "-f") # Takes a filename
+    if (sys.argv[1] == "-f"): # Takes a filename
         text = ""
 
         # Reads first command line argument as filename
@@ -15,7 +15,7 @@ if __name__ == "__main__":
         for line in f:
             text += line.strip() + " "
         f.close()
-    else if (sys.argv[1] == "-t"): # Takes text
+    elif (sys.argv[1] == "-t"): # Takes text
         text = sys.argv[2]
     
     print(text)
@@ -118,6 +118,9 @@ if __name__ == "__main__":
             question = "Fill in the blank: " + "____" + " " + action + " " + direct_object
             questions[question] = answer
 
+
+        # POV Questions
+        
 
     for question in questions.keys():  
         print("Q: " + question, "\nA: " + questions[question])
