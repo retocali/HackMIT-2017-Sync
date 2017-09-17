@@ -21,7 +21,7 @@ if __name__ == "__main__":
     print(text)
 
 
-    features = "keywords,semantic_roles,emotion,relations"
+    features = "keywords,semantic_roles,emotion,relations,entities"
 
     data = {"text": text, "features": features}
 
@@ -40,10 +40,10 @@ if __name__ == "__main__":
             if (item == "action" and role[item].get("verb", "") != ""):
                 tense_question = "What is the tense of the word " + role[item]["text"] + " in the sentence: " + role["sentence"]
                 tense_answer = "The answer is " + role[item]["verb"]["tense"] + "."
-                questions[tense_question] = tense_answer
+                questions[tense_question] = (tense_answer, "Tense")
             question = "What is the " + item + " in the sentence: " + role["sentence"]
             answer = "The answer is " + role[item]["text"] + "."
-            questions[question] = answer
+            questions[question] = (answer, "Grammar")
 
     # Emotions Questions
     sadness = ["It was sad.", "The piece was sad.", "The tone was sad."]
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     
     emotion_answer = emotions[emotion][random.randint(0, len(emotions[emotion])-1)]
 
-    questions[emotion_question] = emotion_answer
+    questions[emotion_question] = (emotion_answer, "Tone")
 
     # Relations Questions
     def relation_parser(relation):
@@ -80,6 +80,9 @@ if __name__ == "__main__":
     print(relations)
 
     min_confidence = 0.51
+
+    # Type of question
+    b = "Fill in the blank"
 
     for x in range(0, len(relations)):
         relation = relations[x]
@@ -102,10 +105,10 @@ if __name__ == "__main__":
                     answer = actor + " " + direct_object + " " + n_actor
                     
                     question = "Fill in the blank: " + actor + " " + direct_object + " " + "____"
-                    questions[question] = answer
+                    questions[question] = (answer, b)
                     
                     question = "Fill in the blank: " + "____" + " " + direct_object + " " + n_actor
-                    questions[question] = answer
+                    questions[question] = (answer, b)
             except:
                 continue;
         else:
@@ -113,22 +116,22 @@ if __name__ == "__main__":
             answer = actor + " " + action + " " + direct_object
 
             question = "Fill in the blank: " + actor + " " + action + " " + "____"
-            questions[question] = answer
+            questions[question] = (answer, b)
 
             question = "Fill in the blank: " + "____" + " " + action + " " + direct_object
-            questions[question] = answer
+            questions[question] = (answer, b)
+
+    # Location Questions
 
 
-        # POV Questions
-        
 
     for question in questions.keys():  
-        print("Q: " + question, "\nA: " + questions[question])
+        print("Q: " + question, "\nA: " + questions[question][0])
 
     count = 0
-    data = [['Number', 'Question', 'Answer']]
+    data = [['Number', 'Question', 'Answer', 'Types']]
     for question, answer in questions.items():
-        data.append([count, question, answer])
+        data.append([count, question, answer[0], answer[1]])
         count += 1
     
     with open('questions_answers.csv', 'w') as fp:
